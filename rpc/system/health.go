@@ -17,7 +17,7 @@
 package system
 
 import (
-	"github.com/centrifuge/go-substrate-rpc-client/v4/types"
+	"github.com/5ire-org/5ire-go-api/v4/types"
 )
 
 // Health retrieves the health status of the connected node

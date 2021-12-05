@@ -16,7 +16,7 @@
 
 package author
 
-import "github.com/centrifuge/go-substrate-rpc-client/v4/types"
+import "github.com/5ire-org/5ire-go-api/v4/types"
 
 // SubmitExtrinsic will submit a fully formatted extrinsic for block inclusion
 func (a *Author) SubmitExtrinsic(xt types.Extrinsic) (types.Hash, error) {

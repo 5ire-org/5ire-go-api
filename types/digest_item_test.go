@@ -19,7 +19,7 @@ package types_test
 import (
 	"testing"
 
-	. "github.com/centrifuge/go-substrate-rpc-client/v4/types"
+	. "github.com/5ire-org/5ire-go-api/v4/types"
 )
 
 var testDigestItem1 = DigestItem{IsOther: true, AsOther: NewBytes([]byte{0xab})}
