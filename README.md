@@ -1,4 +1,4 @@
-# Go Substrate RPC Client (GSRPC)
+# Go Substrate RPC Client (GSRPC) for 5ire
 
 [![License: Apache v2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![GoDoc Reference](https://godoc.org/github.com/5ire-org/5ire-go-api?status.svg)](https://godoc.org/github.com/5ire-org/5ire-go-api)
@@ -6,8 +6,7 @@
 [![codecov](https://codecov.io/gh/centrifuge/go-substrate-rpc-client/branch/master/graph/badge.svg)](https://codecov.io/gh/centrifuge/go-substrate-rpc-client)
 [![Go Report Card](https://goreportcard.com/badge/github.com/5ire-org/5ire-go-api)](https://goreportcard.com/report/github.com/5ire-org/5ire-go-api)
 
-Substrate RPC client in Go. It provides APIs and types around Polkadot and any Substrate-based chain RPC calls.
-This client is modelled after [polkadot-js/api](https://github.com/polkadot-js/api).
+Substrate RPC client in Go. It provides APIs and types around any Substrate-based chain RPC calls.
 
 ## State
 
@@ -35,9 +34,6 @@ the tests within a tests-dedicated Docker container or without a container.
 2. `make test`
     Run the tests locally against the Substrate docker container. Note that it expects the
     Substrate docker container to be up and running to execute the whole test suite properly.
-
-
-Visit https://polkadot.js.org/apps for inspection
 
 **Note**: To use a custom Substrate endpoint, first set the enviromment variable before running the tests:
 `export RPC_URL="http://example.com:9934"`

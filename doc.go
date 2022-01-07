@@ -1,4 +1,4 @@
-// Go Substrate RPC Client (GSRPC) provides APIs and types around Polkadot and any Substrate-based chain RPC calls
+// Go Substrate RPC Client (GSRPC) provides APIs and types around any Substrate-based chain RPC calls
 //
 // Copyright 2019 Centrifuge GmbH
 //
@@ -15,14 +15,13 @@
 // limitations under the License.
 
 /*
-Package gsrpc (Go Substrate RPC Client) provides APIs and types around Polkadot and any Substrate-based chain RPC calls.
-This client is modelled after [polkadot-js/api](https://github.com/polkadot-js/api).
+Package gsrpc (Go Substrate RPC Client) provides APIs and types around any Substrate-based chain RPC calls.
 
 Calling RPC methods
 
 Simply instantiate the gsrpc with a URL of your choice, e. g.
 
-	api, err := gsrpc.NewSubstrateAPI("wss://poc3-rpc.polkadot.io")
+	api, err := gsrpc.NewSubstrateAPI("wss://shiva.testnet.5ire.network/ws")
 
 and run any of the provided RPC methods from the api:
 
@@ -48,8 +47,7 @@ examples using composition of a mix of these basic and builtin Go types:
 
 There are some caveats though that you should be aware of:
 
-1. The order of the values in your structs is of relevance to the encoding. The scale codec Substrate/Polkadot
-uses does not encode labels/keys.
+1. The order of the values in your structs is of relevance to the encoding. The scale codec Substrate uses does not encode labels/keys.
 
 2. Some types do not have corresponding types in Go. Working with them requires a custom struct with Encoding/Decoding
 methods that implement the Encodeable/Decodeable interfaces. Examples for that are enums, tuples and vectors with any

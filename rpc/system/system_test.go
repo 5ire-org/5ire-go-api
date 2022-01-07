@@ -1,4 +1,4 @@
-// Go Substrate RPC Client (GSRPC) provides APIs and types around Polkadot and any Substrate-based system RPC calls
+// Go Substrate RPC Client (GSRPC) provides APIs and types around any Substrate-based system RPC calls
 //
 // Copyright 2019 Centrifuge GmbH
 //
