@@ -43,13 +43,9 @@ func Example_simpleConnect() {
 	if err != nil {
 		panic(err)
 	}
-	nodeVersion, err := api.RPC.System.Version()
-	if err != nil {
-		panic(err)
-	}
 
-	fmt.Printf("You are connected to chain %v using %v v%v\n", chain, nodeName, nodeVersion)
-	// Output: You are connected to chain Development using Substrate Node v3.0.0-dev-1b646b2-x86_64-linux-gnu
+	fmt.Printf("You are connected to chain %v using %v\n", chain, nodeName)
+	// Output: You are connected to chain Development using 5ire Node
 }
 
 func Example_listenToNewBlocks() {
